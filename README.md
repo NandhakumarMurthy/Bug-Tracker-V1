@@ -25,18 +25,18 @@ Setup & Installation
 1. Database Setup (PostgreSQL)
 Create your database and table using the following SQL commands:
 
-(sql)
+(SQL)
 
-CREATE DATABASE bugtracker_db;
-
-CREATE TABLE issues (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    description TEXT,
-    priority VARCHAR(20),
-    status VARCHAR(20) DEFAULT 'Open',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+    CREATE DATABASE bugtracker_db;
+    
+    CREATE TABLE issues (
+        id SERIAL PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+        description TEXT,
+        priority VARCHAR(20),
+        status VARCHAR(20) DEFAULT 'Open',
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
 
 2. Backend Configuration
 
@@ -47,11 +47,11 @@ CREATE TABLE issues (
     Create a .env file and add your credentials:
     Code snippet
 
-    DB_USER=bug_admin
-    DB_HOST=localhost
-    DB_NAME=bugtracker_db
-    DB_PASSWORD=your_password
-    DB_PORT=5432
+        DB_USER=bug_admin
+        DB_HOST=localhost
+        DB_NAME=bugtracker_db
+        DB_PASSWORD=your_password
+        DB_PORT=5432
 
     Start the server: npm start (or nodemon app.js).
 
@@ -68,9 +68,9 @@ CREATE TABLE issues (
 
 📈 Future Improvements (V2)
 
-    User Authentication (Login/Signup).
+   User Authentication (Login/Signup).
 
-    Search & Filter functionality.
+   Search & Filter functionality.
 
    Image uploads for bug screenshots.
 
