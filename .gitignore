@@ -1,0 +1,25 @@
+
+# Dependency folders (The big heavy stuff)
+node_modules/
+**/node_modules/
+
+# Secrets (NEVER upload your database passwords!)
+.env
+**/.env
+
+# Next.js build output
+.next/
+out/
+
+# Production builds
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
